@@ -672,7 +672,7 @@ RULES:
   try {
     const res = await fetch("https://api.anthropic.com/v1/messages", {
       method:"POST",
-      headers:{"Content-Type":"application/json"},
+      headers:{"Content-Type":"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"},
       body: JSON.stringify({ model:"claude-sonnet-4-20250514", max_tokens:1000, system:sys, messages:chatHistory })
     });
     const data = await res.json();
@@ -748,7 +748,7 @@ Respond ONLY in JSON format like this:
   try {
     const res = await fetch("https://api.anthropic.com/v1/messages", {
       method:"POST",
-      headers:{"Content-Type":"application/json"},
+      headers:{"Content-Type":"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"},
       body: JSON.stringify({ model:"claude-sonnet-4-20250514", max_tokens:1000,
         messages:[{role:"user",content:prompt}] })
     });
